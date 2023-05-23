@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero } from "./components";
+import { Hero, Sales } from "./components";
 import { heroapi } from "./data/data";
 
 const App = () => {
@@ -7,6 +7,7 @@ const App = () => {
     <>
       <main>
         <Hero heroapi={heroapi} />
+        <Sales />
       </main>
     </>
   );
