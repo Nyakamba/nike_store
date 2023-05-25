@@ -1,10 +1,15 @@
 import React from "react";
 
-const FlexContent = ({ endpoint: { title, heading, text, img, btn, url } }) => {
+const FlexContent = ({
+  ifExists,
+  endpoint: { title, heading, text, img, btn, url },
+}) => {
   return (
     <>
       <div
-        className={`flex items-center justify-between lg:flex-col lg:justify-center nike-container`}
+        className={`flex items-center justify-between lg:flex-col lg:justify-center nike-container ${
+          ifExists ? "flex-row-reverse" : "flex-row"
+        }`}
       >
         <div className="max-w-lg lg:max-w-none w-full md:text-center grid items-center lg:justify-items-center ">
           <h1 className="text-4xl sm:text-3xl font-bold text-gradient">
@@ -32,7 +37,11 @@ const FlexContent = ({ endpoint: { title, heading, text, img, btn, url } }) => {
           <img
             src={img}
             alt={`img/{heading}`}
-            className={`w-auto object-fill transitions-theme`}
+            className={`w-auto object-fill transitions-theme ${
+              ifExists
+                ? "h-60 lg:h-56 md:h-52 sm:h-44 xsm:h-36 rotate-6 hover:-rotate-12"
+                : "h-72 lg:h-64 md:h-60 sm:h-48 xsm:h-40 rotate-[19deg] hover:rotate-12"
+            }`}
           />
         </div>
       </div>
