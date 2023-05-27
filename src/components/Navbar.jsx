@@ -4,7 +4,7 @@ import {
   MagnifyingGlassIcon,
   ShoppingBagIcon,
 } from "@heroicons/react/24/outline";
-import logo from "../assets/log.png;";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   return (
