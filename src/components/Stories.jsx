@@ -9,34 +9,34 @@ const Stories = ({ story: { title, news } }) => {
     <>
       <div className="nike-container mb-11">
         <Title title={title} />
-        <div>
+        <div className="">
           <Splide>
             {news.map((val, i) => (
-              <SplideSlide>
-                <div>
-                  <div>
-                    <img src={val.img} alt="stories" />{" "}
+              <SplideSlide key={i} className="mb-0.5">
+                <div className="relative grid items-center gap-4 pb-2 rounded-lg shadow shadow-slate-200 ring-1 ring-slate-200 ">
+                  <div className="flex items-center justify-center">
+                    <img src={val.img} alt="stories" className="" />{" "}
                   </div>
 
-                  <div>
-                    <div>
+                  <div className="">
+                    <div className="">
                       <HeartIcon className="icon-style" />
                       <span>{val.like}</span>
                     </div>
-                    <div>
+                    <div className="">
                       <ClockIcon className="icon-style" />
                       <span>{val.time}</span>
                     </div>
-                    <div>
+                    <div className="">
                       <HashtagIcon className="icon-style" />
                       <span>{val.by}</span>
                     </div>
                   </div>
-                  <div>
+                  <div className="">
                     <h1>{val.title}</h1>
                     <p>{val.text}</p>
                   </div>
-                  <div>
+                  <div className="">
                     <a href={val.url}>{val.btn}</a>
                   </div>
                 </div>
