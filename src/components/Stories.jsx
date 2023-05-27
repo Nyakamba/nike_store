@@ -17,19 +17,20 @@ const Stories = ({ story: { title, news } }) => {
                   <div>
                     <img src={val.img} alt="stories" />{" "}
                   </div>
-                </div>
-                <div>
+
                   <div>
-                    <HeartIcon className="icon-style" />
-                    <span>{val.like}</span>
-                  </div>
-                  <div>
-                    <ClockIcon className="icon-style" />
-                    <span>{val.time}</span>
-                  </div>
-                  <div>
-                    <HashtagIcon className="icon-style" />
-                    <span>{val.by}</span>
+                    <div>
+                      <HeartIcon className="icon-style" />
+                      <span>{val.like}</span>
+                    </div>
+                    <div>
+                      <ClockIcon className="icon-style" />
+                      <span>{val.time}</span>
+                    </div>
+                    <div>
+                      <HashtagIcon className="icon-style" />
+                      <span>{val.by}</span>
+                    </div>
                   </div>
                 </div>
               </SplideSlide>
