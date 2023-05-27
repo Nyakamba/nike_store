@@ -20,8 +20,8 @@ const App = () => {
 
         <FlexContent endpoint={sneaker} />
         <Stories story={story} />
-        <Footer />
       </main>
+      {/* <Footer /> */}
     </>
   );
 };
