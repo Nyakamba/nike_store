@@ -5,6 +5,7 @@ import {
   highlight,
   popularsales,
   sneaker,
+  story,
   toprateslaes,
 } from "./data/data";
 
@@ -18,7 +19,7 @@ const App = () => {
         <Sales endpoint={toprateslaes} />
 
         <FlexContent endpoint={sneaker} />
-        <Stories />
+        <Stories story={story} />
       </main>
     </>
   );
