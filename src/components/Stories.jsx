@@ -32,6 +32,13 @@ const Stories = ({ story: { title, news } }) => {
                       <span>{val.by}</span>
                     </div>
                   </div>
+                  <div>
+                    <h1>{val.title}</h1>
+                    <p>{val.text}</p>
+                  </div>
+                  <div>
+                    <a href={val.url}>{val.btn}</a>
+                  </div>
                 </div>
               </SplideSlide>
             ))}
