@@ -1,6 +1,7 @@
 import React from "react";
 import { FlexContent, Footer, Hero, Sales, Stories } from "./components";
 import {
+  footerAPI,
   heroapi,
   highlight,
   popularsales,
@@ -21,7 +22,7 @@ const App = () => {
         <FlexContent endpoint={sneaker} />
         <Stories story={story} />
       </main>
-      {/* <Footer /> */}
+      <Footer footerAPI={footerAPI} />
     </>
   );
 };
