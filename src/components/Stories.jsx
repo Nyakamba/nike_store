@@ -22,16 +22,16 @@ const Stories = ({ story: { title, news } }) => {
                     />{" "}
                   </div>
 
-                  <div className="">
-                    <div className="">
-                      <HeartIcon className="icon-style" />
+                  <div className="flex items-center justify-between w-full px-4  ">
+                    <div className="flex items-center gap-0.5">
+                      <HeartIcon className="icon-style text-red-500 w-5 h-5 " />
                       <span>{val.like}</span>
                     </div>
-                    <div className="">
+                    <div className="flex items-center gap-0.5">
                       <ClockIcon className="icon-style" />
                       <span>{val.time}</span>
                     </div>
-                    <div className="">
+                    <div className="flex items-center gap-0.5">
                       <HashtagIcon className="icon-style" />
                       <span>{val.by}</span>
                     </div>
