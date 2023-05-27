@@ -11,7 +11,7 @@ const Navbar = () => {
     <>
       <header className={`absolute top-7 left-0 right-0  opacity-100 z-50`}>
         <nav className="flex items-center justify-between nike-container  ">
-          <div>
+          <div className="flex items-center">
             <img src={logo} alt="logo/img" className="w-16 h-auto" />
           </div>
           <ul className="flex items-center justify-center gap-2">
