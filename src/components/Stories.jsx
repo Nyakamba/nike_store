@@ -15,7 +15,11 @@ const Stories = ({ story: { title, news } }) => {
               <SplideSlide key={i} className="mb-0.5">
                 <div className="relative grid items-center gap-4 pb-2 rounded-lg shadow shadow-slate-200 ring-1 ring-slate-200 ">
                   <div className="flex items-center justify-center">
-                    <img src={val.img} alt="stories" className="" />{" "}
+                    <img
+                      src={val.img}
+                      alt="stories"
+                      className="w-full h-auto object-cover shadow-md shadow-slate-200 rounded-tl-lg rounded-tr-lg "
+                    />{" "}
                   </div>
 
                   <div className="">
