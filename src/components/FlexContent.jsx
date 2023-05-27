@@ -16,7 +16,7 @@ const FlexContent = ({
             {heading}
           </h1>
           <h1 className="text-5xl lg:text-4xl md:text-3xl sm:text-2xl font-bold text-slate-900 filter drop-shadow-lg">
-            {title}{" "}
+            {title}
           </h1>
           <p className="xl:text-sm my-4 text-slate-900">{text} </p>
           <a
