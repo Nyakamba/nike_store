@@ -17,7 +17,9 @@ const CartSlice = createSlice({
       state.cartState = action.payload.cartState;
     },
 
-    setAddItemToCart: (state, action) => {},
+    setAddItemToCart: (state, action) => {
+      satisfies.cartItems.push(action.payload);
+    },
   },
 });
 
