@@ -9,7 +9,7 @@ const CartItem = ({
       <div>
         <div>
           <div>
-            <img src={img} alt="img" />
+            <img src={img} alt={`img/cart-item/${id}`} />
           </div>
           <div>
             <div>
