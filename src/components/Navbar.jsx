@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   HeartIcon,
   MagnifyingGlassIcon,
@@ -7,6 +7,8 @@ import {
 import logo from "../assets/logo.png";
 
 const Navbar = () => {
+  const [navState, setNavState] = useState();
+
   return (
     <>
       <header className={`absolute top-7 left-0 right-0  opacity-100 z-50`}>
