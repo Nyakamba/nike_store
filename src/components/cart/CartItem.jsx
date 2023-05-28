@@ -7,8 +7,16 @@ const CartItem = ({
     <>
       <div>
         <div>
-          <div></div>
-          <div></div>
+          <div>
+            <img src={img} alt="img" />
+          </div>
+          <div>
+            <div>
+              <h1>{title} </h1>
+              <p>{text}</p>
+            </div>
+            <div></div>
+          </div>
         </div>
         <div></div>
       </div>
