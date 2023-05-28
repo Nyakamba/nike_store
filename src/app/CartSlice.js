@@ -18,6 +18,7 @@ const CartSlice = createSlice({
     },
 
     setAddItemToCart: (state, action) => {
+      const temp = { ...action.payload, cartQuantity: 1 };
       state.cartItems.push(action.payload);
     },
   },
