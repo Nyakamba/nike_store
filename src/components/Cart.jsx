@@ -30,7 +30,7 @@ const Cart = () => {
         <div className="blur-effect-theme h-screen max-w-xl w-full absolute right-0 ">
           <CartCount onCartToggle={onCartToggle} />
 
-          {cartItems.lenght === 0 ? (
+          {cartItems.length === 0 ? (
             <CartEmpty />
           ) : (
             <div>
