@@ -42,10 +42,18 @@ const Navbar = () => {
           </div>
           <ul className="flex items-center justify-center gap-2">
             <li className="grid items-center">
-              <MagnifyingGlassIcon className="icon-style" />
+              <MagnifyingGlassIcon
+                className={`icon-style ${
+                  navState && "text-slate-900 transition-all duration-300"
+                }`}
+              />
             </li>
             <li className="grid items-center">
-              <HeartIcon className="icon-style" />
+              <HeartIcon
+                className={`icon-style ${
+                  navState && "text-slate-900 transition-all duration-300"
+                }`}
+              />
             </li>
             <li className="grid items-center">
               <button
