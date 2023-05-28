@@ -18,11 +18,12 @@ const CartSlice = createSlice({
     },
 
     setAddItemToCart: (state, action) => {
-      satisfies.cartItems.push(action.payload);
+      state.cartItems.push(action.payload);
     },
   },
 });
 
-export const { setOpenCart, setCloseCart } = CartSlice.actions;
+export const { setOpenCart, setCloseCart, setAddItemToCart } =
+  CartSlice.actions;
 export const selectCartState = (state) => state.cart.cartState;
 export default CartSlice.reducer;
