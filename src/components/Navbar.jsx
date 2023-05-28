@@ -8,7 +8,7 @@ import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [navState, setNavState] = useState(false);
-  const onNavSroll = () => {
+  const onNavScroll = () => {
     if (window.screenY > 30) {
       setNavState(true);
     } else {
@@ -16,7 +16,12 @@ const Navbar = () => {
     }
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    window.addEventListener("scroll", onNavScroll);
+    return () => {
+      window.removeEventListener("scroll", onNavScroll);
+    };
+  }, []);
 
   return (
     <>
