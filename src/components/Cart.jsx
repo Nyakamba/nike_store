@@ -41,9 +41,6 @@ const Cart = () => {
               </div>
             </div>
           )}
-
-          <CartEmpty />
-          <CartItem />
         </div>
       </div>
     </>
