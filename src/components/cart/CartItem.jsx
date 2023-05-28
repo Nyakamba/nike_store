@@ -5,7 +5,13 @@ const CartItem = ({
 }) => {
   return (
     <>
-      <div></div>
+      <div>
+        <div>
+          <div></div>
+          <div></div>
+        </div>
+        <div></div>
+      </div>
     </>
   );
 };
