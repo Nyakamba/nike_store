@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   cartState: false,
+  cartItems: [], //Let suppose Database
 };
 
 const CartSlice = createSlice({
@@ -15,6 +16,8 @@ const CartSlice = createSlice({
     setCloseCart: (state, action) => {
       state.cartState = action.payload.cartState;
     },
+
+    setAddItemToCart: (state, action) => {},
   },
 });
 
