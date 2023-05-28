@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   HeartIcon,
   MagnifyingGlassIcon,
@@ -7,7 +7,16 @@ import {
 import logo from "../assets/logo.png";
 
 const Navbar = () => {
-  const [navState, setNavState] = useState();
+  const [navState, setNavState] = useState(false);
+  const onNavSroll = () => {
+    if (window.screenY > 30) {
+      setNavState(true);
+    } else {
+      setNavState(false);
+    }
+  };
+
+  useEffect(() => {}, []);
 
   return (
     <>
