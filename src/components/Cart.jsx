@@ -34,7 +34,7 @@ const Cart = () => {
             <CartEmpty />
           ) : (
             <div>
-              <div>
+              <div className="flex items-center justify-start flex-col gap-y-7 lg:gap-y-5 overflow-y-scroll h-[81vh]">
                 {cartItems?.map((item, i) => (
                   <CartItem key={i} item={item} />
                 ))}{" "}
