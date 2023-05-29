@@ -9,16 +9,18 @@ const CartItem = ({
   const dispatch = useDispatch();
 
   const onRemoveItem = () => {
-    setRemoveItemFromCart({
-      id,
-      title,
-      text,
-      img,
-      color,
-      shadow,
-      price,
-      cartQuantity,
-    });
+    dispatch(
+      setRemoveItemFromCart({
+        id,
+        title,
+        text,
+        img,
+        color,
+        shadow,
+        price,
+        cartQuantity,
+      })
+    );
   };
 
   return (
