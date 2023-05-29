@@ -6,7 +6,7 @@ const CartItem = ({
 }) => {
   return (
     <>
-      <div className="">
+      <div className="flex items-center justify-between w-full px-5">
         <div className="">
           <div>
             <img
