@@ -17,10 +17,12 @@ const CartItem = ({
               className="w-36 h-auto object-fill lg:w-28"
             />
           </div>
-          <div className="">
-            <div>
-              <h1>{title} </h1>
-              <p>{text}</p>
+          <div className="grid items-center gap-4">
+            <div className="grid items-center leading-none">
+              <h1 className="font-medium text-lg text-slate-900 lg:text-sm">
+                {title}{" "}
+              </h1>
+              <p className="text-sm text-slate-800 lg:text-xs">{text}</p>
             </div>
             <div className="">
               <button type="button" className="">
