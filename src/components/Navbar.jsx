@@ -81,7 +81,7 @@ const Navbar = () => {
                       : "bg-slate-100 text-slate-900 shadow-slate-100"
                   }`}
                 >
-                  14
+                  0
                 </div>{" "}
               </button>
             </li>
