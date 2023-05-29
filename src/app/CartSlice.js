@@ -48,6 +48,9 @@ const CartSlice = createSlice({
 
       toast.success(`${action.payload.temp} Remoed From Cart`);
     },
+    setIncreaseItemQTY: (state, action) => {},
+    setDecreaseItemQTY: (state, action) => {},
+    setClearCartItems: (state, action) => {},
   },
 });
 
