@@ -7,6 +7,7 @@ import {
   setCloseCart,
   selectCartState,
   selectCartItems,
+  setClearCartItems,
 } from "../app/CartSlice.js";
 
 const Cart = () => {
@@ -16,6 +17,9 @@ const Cart = () => {
 
   const onCartToggle = () => {
     dispatch(setCloseCart({ cartState: false }));
+  };
+  const onClearCartItems = () => {
+    dispatch(setClearCartItems());
   };
 
   return (
@@ -28,7 +32,10 @@ const Cart = () => {
         }`}
       >
         <div className="blur-effect-theme h-screen max-w-xl w-full absolute right-0 ">
-          <CartCount onCartToggle={onCartToggle} />
+          <CartCount
+            onCartToggle={onCartToggle}
+            onClearCartItems={onClearCartItems}
+          />
 
           {cartItems.length === 0 ? (
             <CartEmpty />
