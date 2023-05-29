@@ -6,21 +6,21 @@ const CartItem = ({
 }) => {
   return (
     <>
-      <div>
-        <div>
+      <div className="">
+        <div className="">
           <div>
             <img src={img} alt={`img/cart-item ${id}`} />
           </div>
-          <div>
+          <div className="">
             <div>
               <h1>{title} </h1>
               <p>{text}</p>
             </div>
-            <div>
+            <div className="">
               <button type="button" className="">
                 <MinusIcon className="w-5 h-5" />
               </button>
-              <div>{cartQuantity}</div>
+              <div className="">{cartQuantity}</div>
               <button type="button" className="">
                 <PlusIcon className="w-5 h-5" />
               </button>
