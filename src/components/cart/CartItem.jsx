@@ -49,9 +49,12 @@ const CartItem = ({
               ${price * cartQuantity}
             </h1>
           </div>
-          <div className="grid items-center justify-center">
-            <button type="button" className="">
-              <TrashIcon className="w-5 h-5" />
+          <div className="grid items-center justify-items-center">
+            <button
+              type="button"
+              className="bg-theme-cart rounded p-1 lg:p-0.5 grid items-center justify-items-center"
+            >
+              <TrashIcon className="w-5 h-5 text-white" />
             </button>
           </div>
         </div>
