@@ -24,8 +24,8 @@ const CartItem = ({
               </h1>
               <p className="text-sm text-slate-800 lg:text-sm">{text}</p>
             </div>
-            <div className="">
-              <button type="button" className="">
+            <div className="flex items-center justify-around w-full ">
+              <button type="button" className="bg-theme-cart rounded">
                 <MinusIcon className="w-5 h-5" />
               </button>
               <div className="">{cartQuantity}</div>
