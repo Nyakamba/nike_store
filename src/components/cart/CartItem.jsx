@@ -25,7 +25,10 @@ const CartItem = ({
               <p className="text-sm text-slate-800 lg:text-sm">{text}</p>
             </div>
             <div className="flex items-center justify-around w-full ">
-              <button type="button" className="bg-theme-cart rounded ">
+              <button
+                type="button"
+                className="bg-theme-cart rounded w-6 h-6 lg:w-5 lg:h-5 flex items-center justify-center active:scale-90"
+              >
                 <MinusIcon className="w-5 h-5 lg:w-4 lg:h-4 text-white storke-[20]" />
               </button>
               <div className="">{cartQuantity}</div>
