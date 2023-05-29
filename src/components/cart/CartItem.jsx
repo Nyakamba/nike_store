@@ -43,11 +43,13 @@ const CartItem = ({
             </div>
           </div>
         </div>
-        <div>
-          <div>
-            <h1>{price * cartQuantity}</h1>
+        <div className="grid items-center gap-5">
+          <div className="grid items-center justify-center">
+            <h1 className="text-lg lg:text-base text-slate-900 font-medium">
+              ${price * cartQuantity}
+            </h1>
           </div>
-          <div>
+          <div className="grid items-center justify-center">
             <button type="button" className="">
               <TrashIcon className="w-5 h-5" />
             </button>
