@@ -7,8 +7,8 @@ const CartItem = ({
   return (
     <>
       <div className="flex items-center justify-between w-full px-5">
-        <div className="">
-          <div>
+        <div className="flex items-center gap-5">
+          <div className="">
             <img
               src={img}
               alt={`img/cart-item ${id}`}
