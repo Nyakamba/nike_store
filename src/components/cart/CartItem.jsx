@@ -5,7 +5,7 @@ import {
   setIncreaseItemQTY,
   setRemoveItemFromCart,
   setDecreaseItemQTY,
-} from "../../app/CartSlice";
+} from "../../app/CartSlice.js";
 
 const CartItem = ({
   item: { id, title, text, img, color, shadow, price, cartQuantity },
