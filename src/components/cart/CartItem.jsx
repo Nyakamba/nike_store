@@ -8,7 +8,7 @@ const CartItem = ({
     <>
       <div className="flex items-center justify-between w-full px-5">
         <div className="flex items-center gap-5">
-          <div className="">
+          <div className={`bg-gradient-to-b ${color} ${shadow}`}>
             <img
               src={img}
               alt={`img/cart-item ${id}`}
