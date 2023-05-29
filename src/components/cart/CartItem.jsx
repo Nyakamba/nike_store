@@ -22,7 +22,7 @@ const CartItem = ({
               <h1 className="font-medium text-lg text-slate-900 lg:text-sm">
                 {title}{" "}
               </h1>
-              <p className="text-sm text-slate-800 lg:text-xs">{text}</p>
+              <p className="text-sm text-slate-800 lg:text-sm">{text}</p>
             </div>
             <div className="">
               <button type="button" className="">
