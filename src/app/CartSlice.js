@@ -64,9 +64,9 @@ const CartSlice = createSlice({
         (item) => item.id === action.payload.id
       );
 
-      if (itemIndex >= 0) {
+      if (state.cartItems[itemIndex].cartQuantity > 1) {
         state.cartItems[itemIndex].cartQuantity += 1;
-        toast.success(`Item QTY Increased`);
+        toast.success(`Item QTY Decreased`);
       }
       localStorage.setItem("cart", JSON.stringify(state.cartItems));
     },
