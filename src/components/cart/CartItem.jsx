@@ -83,7 +83,7 @@ const CartItem = ({
               >
                 <MinusIcon className="w-5 h-5 lg:w-4 lg:h-4 text-white storke-[20]" />
               </button>
-              <div className="bg-theme-cart rounded text-white font-medium  lg:text-sm w-7 h-6 lg:h-5 lg:w-6 flex items-center justify-center">
+              <div className="bg-theme-cart rounded text-white font-medium  lg:text-xs w-7 h-6 lg:h-5 lg:w-6 flex items-center justify-center">
                 {cartQuantity}
               </div>
               <button
