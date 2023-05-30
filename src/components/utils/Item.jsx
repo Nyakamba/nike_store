@@ -23,6 +23,10 @@ const Item = ({
     dispatch(setAddItemToCart(item));
   };
 
+  const onCartToggle = () => {
+    dispatch(setOpenCart({ cartState: true }));
+  };
+
   return (
     <>
       <div
@@ -63,7 +67,10 @@ const Item = ({
             </button>
             <button
               type="button"
-              onClick={() => onAddToCart()}
+              onClick={() => {
+                onAddToCart();
+                onCartToggle();
+              }}
               className="bg-white/90 blur-effect-theme button-theme p-x-2 py-1 shadow shadow-sky-200 text-sm text-black"
             >
               {btn}
