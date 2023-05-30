@@ -6,6 +6,9 @@ const initialState = {
   cartItems: localStorage.getItem("cart")
     ? JSON.parse(localStorage.getItem("cart"))
     : [], //Let suppose Database
+
+  cartTotalAmount: 0,
+  cartTotalQantity: 0,
 };
 
 const CartSlice = createSlice({
@@ -30,7 +33,7 @@ const CartSlice = createSlice({
         toast.success(`Item QTY Increased`);
       } else {
         const temp = { ...action.payload, cartQuantity: 1 };
-        state.cartItems.push(action.payload);
+        state.cartItems.push(temp);
 
         toast.success(`${action.payload.title} added to Cart`);
       }
