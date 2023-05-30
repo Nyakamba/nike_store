@@ -11,6 +11,7 @@ import { setOpenCart } from "../app/CartSlice";
 const Navbar = () => {
   const [navState, setNavState] = useState(false);
   const dispatch = useDispatch();
+  const totalQTY = useSelector(selectTotalQTY);
 
   const onCartToggle = () => {
     dispatch(setOpenCart({ cartState: true }));
@@ -81,7 +82,7 @@ const Navbar = () => {
                       : "bg-slate-100 text-slate-900 shadow-slate-100"
                   }`}
                 >
-                  0
+                  {totalQTY}
                 </div>{" "}
               </button>
             </li>
