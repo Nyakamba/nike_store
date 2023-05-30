@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CartCount from "./cart/CartCount";
 import CartEmpty from "./cart/CartEmpty";
 import CartItem from "./cart/CartItem";
@@ -8,12 +8,21 @@ import {
   selectCartState,
   selectCartItems,
   setClearCartItems,
+  setGetTotals,
+  selectTotalAmount,
+  selectTotalQTY,
 } from "../app/CartSlice.js";
 
 const Cart = () => {
   const dispatch = useDispatch();
   const ifCartState = useSelector(selectCartState);
   const cartItems = useSelector(selectCartItems);
+  const totalAmount = useSelector(selectTotalAmount);
+  const totalQTY = useSelector(selectTotalQTY);
+
+  useEffect(() => {
+    dispatch(setGetTotals());
+  }, [cartItems, dispatch]);
 
   const onCartToggle = () => {
     dispatch(setCloseCart({ cartState: false }));
