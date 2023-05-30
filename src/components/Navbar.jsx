@@ -5,8 +5,8 @@ import {
   ShoppingBagIcon,
 } from "@heroicons/react/24/outline";
 import logo from "../assets/logo.png";
-import { useDispatch } from "react-redux";
-import { setOpenCart } from "../app/CartSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { setOpenCart, selectTotalQTY } from "../app/CartSlice";
 
 const Navbar = () => {
   const [navState, setNavState] = useState(false);
